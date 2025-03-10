@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fin">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauppalista</title>
+    <title>TO-DO lista</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Kauppalista</h1>
+    <h1>TO-Do lista</h1>
     <form id="todo-form">
-        <input type="text" id="todo-input" placeholder="Lisää uusi tehtävä">
-        <button type="submit">Lisää</button>
+        <input type="text" id="todo-input" placeholder="Syötä tehtävä">
+        <button type="submit">Add</button>
+        <span id="error-message"></span>
     </form>
     <ul id="todo-list"></ul>
+    <p id="remaining-tasks">Tehtäviä jäljellä: 0</p>
     <script src="script.js"></script>
 </body>
 </html>
